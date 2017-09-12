@@ -19,15 +19,6 @@ function noodlezero_product_cats_css() {
 
 add_action( 'wp_enqueue_scripts', 'noodlezero_product_cats_css' );
 
-function include_template_functions() {
-    // Load any deprecated functions for previous WooCommerce versions first.
-    require_once( $this->get_plugin_path() . '/woocommerce-template-deprecated.php' );
-    // Then load the current ones.
-    require_once( $this->get_plugin_path() . '/woocommerce-template.php' );
-}
-
-// Override the WooCommerce template functions.
-add_action( 'after_setup_theme', array( $this, 'include_template_functions' ) );
 
 
 
