@@ -60,7 +60,7 @@ if ( ! function_exists( 'woocommerce_nested_category_products_content_section' )
 		}
 
 		// subcategory header
-		echo wp_kses_post( apply_filters( 'wc_nested_category_layout_category_title_html', sprintf( '<h2 class="wc-nested-category-layout-category-title">%s</h2>', $title ), $categories, $term ) );
+		echo wp_kses_post( apply_filters( 'wc_nested_category_layout_category_title_html', sprintf( '<h2 class="wc-nested-category-layout-category">%s</h2>', $title ), $categories, $term ) );
 
 		// optional thumbnail/description of the category
 		$category = $categories[ count( $categories ) - 1 ];
